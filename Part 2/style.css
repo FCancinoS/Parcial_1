@@ -1,76 +1,101 @@
 header {
-
+display: flex;
+justify-content: center;
 
 }
-
-
 h2 {
-
+  border: 1px solid black;
+  width: 200px;
+  text-align: center;
+  margin: 3px;
 }
-
 .nav {
-
-
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  
+  
   }
 
   li {
-
+    width: 150px;
+    text-align: center;
+    border: 1px solid black;
+   margin: 10px;
 
   }
 
   .content{
+    border: 1px solid black;
+    padding: 5px;
 
 }
 
   .aside {
+    float: left;
+    width: 200px;
 
+    height: auto;
+    border: 1px solid black;
+    margin-top: auto;
   }
 
   .slidebox{
-
+    border: 1px solid black;
    
   }
 
   .article{
+    border: 1px solid black;
+    width: 800;
+    margin-left: 200px;
 
   }
 
 
 .poem{
-
+  border: 1px solid black
 }
-
-
 /*Device = Tablets, Ipads (portrait)
   Screen = B/w 600px to 990px*/
   @media (min-width:600px) and (max-width: 990px)  {
-    .article {
-
-  } 
-header{
-
+    header{
+      display: none;   
+    }
+  .slidebox{
+    border: 1px solid black;
+  }
+  .article{
+    border: 1px solid black;
+    width: 300;
+    margin-left: 200px;
 }
-}
-
+  }
 /*  Small devices    */
 @media (max-width:599px) {
-
 header,.content{
-
+  display: none;
 }
-
 .nav {
-
-
-  }
-
-
+  display: flex;
+  flex-direction: column;
+  margin: auto;  
+}
 .nav > li {
-
+  list-style-type: none;
+  padding: 10px;
+  width: 200px;
+  height: 10px;
+  margin: auto;
+  margin-top: 30px;
+  border:1px solid rgb(0, 0, 0);
+  justify-content: center;
+  text-align: center;    
 }
 
 
 }
+
 
 
   

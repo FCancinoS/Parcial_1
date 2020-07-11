@@ -8,7 +8,8 @@
 
 <script>
 
-let nombres  = ['Jorge','Isabel','Juan','Pedro','Karina','Jose','Arturo','Rogelio','Bertha'];
+var nombres  = ['Jorge','Isabel','Juan','Pedro','Karina','Jose','Arturo','Rogelio','Bertha'];
+
 
 
 
@@ -28,16 +29,46 @@ Crea una funcion llamada: challenge1  que realice lo siguiente:
 
 // CREA TU FUNCION challenge1 aqui:
 
+function challenge1(){
+    var botones = prompt("¿Cuantos botones necesitas? ");
+    for(var i =0; i<botones; i++){//i
+
+        console.log(nombres[i]);
+        var targetDiv = document.getElementById("dummy");//ii
+        var newDiv = document.createElement("button");//iii
+        
+        
+        targetDiv.appendChild(newDiv); //V
+       
+
+}
+}
+
+
+
 
 
 /*
 Crea una funcion llamada: challenge2 que utilizando un FOR convierta todos los nombres a mayusula y los escriba en la consola
 */
 
+
 // CREA TU FUNCION challenge2 2 aquí.
+function challenge2(){
+    var nuevo = nombres.map(function(x){ return x.toUpperCase() })
+    for(var i =0; i<9; i++){
+       
+        console.log(nuevo[i]);
+    }
+}
 
 
+var dog = new Object();
+dog.nombre;
+dog.color;
+dog.raza;
 
+var fido = new Dog("tequila","negro","pastor aleman")
 /*
 
 A) Define un objeto tipo "Dog" que reciba 3 parametros
@@ -47,9 +78,12 @@ A) Define un objeto tipo "Dog" que reciba 3 parametros
 3) Raza
 
 
+
 B) Crea 3 objectos siguiendo esa clase con diferentes valores
 
 eJ   var fido = new Dog("Fido","Cafe","Poodle")
+
+
 
 
 *****BONUS**** 10  puntos
